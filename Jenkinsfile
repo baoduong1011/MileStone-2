@@ -1,9 +1,22 @@
 pipeline {
 	agent any
 	stages {
+
+		stage('Build') {
+			steps {
+				echo "Build Jenkins"
+			}
+		}
+
 		stage('Test') {
 			steps {
-				sh 'mvn clean install'
+				echo "Test Jenkins"
+			}
+		}
+
+		stage('Deploy') {
+			steps {
+				echo "Deploy Jenkins"
 			}
 		}
 	}

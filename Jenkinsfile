@@ -4,7 +4,7 @@ pipeline {
 
 		stage('Build') {
 			steps {
-				sh 'maven clean test'
+				echo 'maven clean test'
 			}
 		}
 

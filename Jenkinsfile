@@ -1,13 +1,10 @@
 pipeline {
 	agent any
-	tool {
-		maven "milestone_maven"
-	}
 	stages {
 
 		stage('Build') {
 			steps {
-				echo "Build Jenkins"
+				sh "sudo mkdir lib"
 			}
 		}
 

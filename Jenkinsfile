@@ -4,7 +4,8 @@ pipeline {
 
 		stage('Build') {
 			steps {
-				echo 'maven clean test'
+				echo '==== WGET MAVEN ===='
+				sh "cd lib/; wget https://repo1.maven.org/maven2/org/junit/platform/junit-platform-console-standalone/1.8.2/junit-platform-console-standalone-1.8.2-javadoc.jar"
 			}
 		}
 

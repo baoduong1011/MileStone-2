@@ -1,7 +1,7 @@
 pipeline {
 	agent any
 	tool {
-		maven
+		maven "milestone_maven"
 	}
 	stages {
 

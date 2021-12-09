@@ -4,7 +4,7 @@ pipeline {
 
 		stage('Build') {
 			steps {
-				sh "sudo mkdir lib"
+				sh "mkdir lib"
 			}
 		}
 

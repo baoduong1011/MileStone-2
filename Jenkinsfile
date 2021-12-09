@@ -4,7 +4,7 @@ pipeline {
 
 		stage('Build') {
 			steps {
-				sh "mkdir lib"
+				sh 'cd lib/'
 			}
 		}
 
